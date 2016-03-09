@@ -6,10 +6,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var questions = require('./routes/questions');
+var mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost/AwesomeAnsersJan2016");
+
 var app = express();
 
 // view engine setup
