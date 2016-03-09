@@ -1,8 +1,8 @@
 // in node you must call the library eachtime u require it
 var express = require("express"),
-    router = epxpress.Router();
+    router = express.Router();
 
-router.get("/new", functino(request, response, next){
+router.get("/new", function(request, response, next){
   response.end("Create New Question");
 });
 
